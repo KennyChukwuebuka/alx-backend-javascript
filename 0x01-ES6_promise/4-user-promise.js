@@ -1,7 +1,8 @@
+/*eslint-disable*/
 function signUpUser(firstName, lastName) {
   return Promise.resolve({
-    fsName: firstName,
-    laName: lastName,
+    firstName: firstName,
+    lastName: lastName,
   });
 }
 
