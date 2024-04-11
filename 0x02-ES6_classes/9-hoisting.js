@@ -1,4 +1,5 @@
-export class HolbertonClass {
+/*eslint-disable*/
+class HolbertonClass {
   constructor(year, location) {
     this._year = year;
     this._location = location;
@@ -13,7 +14,7 @@ export class HolbertonClass {
   }
 }
 
-export class StudentHolberton {
+class StudentHolberton {
   constructor(firstName, lastName, holbertonClass) {
     this._firstName = firstName;
     this._lastName = lastName;
