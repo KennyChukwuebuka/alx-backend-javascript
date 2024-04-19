@@ -10,6 +10,16 @@ of the string. The string contains all the values of the set separated by -
  */
 
 
-export default function cleanSet(set, startString) {
-    return Array.from(set).filter((value) => value.startsWith(startString)).join('-');
-}
+function cleanSet(Set, startString) {
+    let result = '';
+    Set.forEach(value => {
+      if (value.startsWith(startString)) {
+        const cleanedValue = value.slice(startString.length);
+        result += (result.length === 0 ? '' : '-') + cleanedValue;
+      }
+    });
+    return result;
+  }
+  
+  export default cleanSet;
+  
