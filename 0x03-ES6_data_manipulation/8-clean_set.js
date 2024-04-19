@@ -15,11 +15,12 @@ function cleanSet(Set, startString) {
     Set.forEach(value => {
       if (value.startsWith(startString)) {
         const cleanedValue = value.slice(startString.length);
-        result += (result.length === 0 ? '' : '-') + cleanedValue;
+        result += (result === '' ? '' : '-') + cleanedValue;
       }
     });
     return result;
   }
   
   export default cleanSet;
+  
   
