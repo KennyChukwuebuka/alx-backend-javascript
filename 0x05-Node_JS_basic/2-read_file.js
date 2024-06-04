@@ -4,14 +4,14 @@ function countStudents(path) {
   try {
     const readData = fs.readFileSync(path, 'utf-8');
 
-    const splitLines = readData.split('\n').filter(splitLine => splitLine.trim() !== '');
+    const splitLines = readData.split('\n').filter((splitLine) => splitLine.trim() !== '');
 
     if (splitLines.length === 0) {
       throw new Error('Cannot load the database');
     }
 
     // Remove the header line
-    const header = splitLines.shift();
+    // const header = splitLines.shift();
 
     const studentsByField = {};
     let totalStudents = 0;
