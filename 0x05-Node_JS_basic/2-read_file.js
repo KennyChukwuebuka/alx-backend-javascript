@@ -10,9 +10,6 @@ function countStudents(path) {
       throw new Error('Cannot load the database');
     }
 
-    // Remove the header line
-    // const header = splitLines.shift();
-
     const studentsByField = {};
     let totalStudents = 0;
 
